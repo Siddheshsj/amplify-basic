@@ -21,5 +21,4 @@ printf ',
     "oauth": {}
 };\n' >> aws-exports.js
 
-
 printf 'export default awsmobile;' >> aws-exports.js
