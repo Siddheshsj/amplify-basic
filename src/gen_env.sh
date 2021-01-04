@@ -11,17 +11,6 @@ set -e
 
 printf 'const awsmobile = {
     "aws_project_region": "us-east-2",
-    "aws_cloud_logic_custom": [
-        {
-            "name": "pythonsync",
-            "endpoint": "https://q3go2n3yd6.execute-api.us-east-2.amazonaws.com/dev",
-            "region": "us-east-2"
-        }
-    ],
-    "aws_appsync_graphqlEndpoint": "https://per7yhi3rrcgzkglzmryx772g4.appsync-api.us-east-2.amazonaws.com/graphql",
-    "aws_appsync_region": "us-east-2",
-    "aws_appsync_authenticationType": "API_KEY",
-    "aws_appsync_apiKey": "da2-ls5ohzli5jflvlfzqx2txp6peu",
     "aws_cognito_identity_pool_id": "%s"' "$COGNITO_IDENTITY_POOL_ID" >> aws-exports.js
 printf ',
     "aws_cognito_region": "us-east-2",
